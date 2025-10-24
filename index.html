@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bevan Jebanesan - Computer Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">BEVAN</span>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="gradient-text">Bevan Jebanesan</span>
+                </h1>
+                <h2 class="hero-subtitle">Computer Engineer & Hardware Designer</h2>
+                <p class="hero-description">
+                    Master's student in Computer Engineering at NC State University, specializing in 
+                    ASIC/FPGA design, RTL development, and hardware acceleration systems.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="tech-grid">
+                    <div class="tech-item">Verilog</div>
+                    <div class="tech-item">SystemVerilog</div>
+                    <div class="tech-item">C++</div>
+                    <div class="tech-item">Python</div>
+                    <div class="tech-item">RTL Design</div>
+                    <div class="tech-item">FPGA</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a passionate Computer Engineering graduate student at NC State University with a strong foundation 
+                        in hardware design and digital systems. My expertise spans RTL design, FPGA development, and 
+                        microprocessor architecture.
+                    </p>
+                    <p>
+                        Currently pursuing my Master's degree with a focus on ASIC and FPGA design, I'm deeply interested 
+                        in the intersection of hardware and software, particularly in areas like CNN accelerators and 
+                        memory hierarchy optimization.
+                    </p>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Technical Skills</h3>
+                        <ul>
+                            <li>RTL Design</li>
+                            <li>Digital Design</li>
+                            <li>Timing Constraints (SDC)</li>
+                            <li>Clock Domain Crossing (CDC)</li>
+                            <li>Micro-Architecture</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Languages & Scripts</h3>
+                        <ul>
+                            <li>C, C++</li>
+                            <li>Python</li>
+                            <li>Verilog</li>
+                            <li>SystemVerilog</li>
+                            <li>TCL</li>
+                        </ul>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools</h3>
+                        <ul>
+                            <li>Altera Quartus Prime</li>
+                            <li>Cadence Virtuoso</li>
+                            <li>Synopsys</li>
+                            <li>AutoCAD</li>
+                            <li>Git</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>C++ Cache & Memory Hierarchy Simulator</h3>
+                        <span class="project-date">Aug 2025 – Oct 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Designed a configurable two-level cache simulator (L1/L2) in C++ using command-line architecture parameters. 
+                        Implemented write-back, write-allocate policies, LRU replacement, and dirty eviction tracking.
+                    </p>
+                    <ul class="project-features">
+                        <li>Bitwise tag/index extraction</li>
+                        <li>SPEC CPU2006 memory access traces</li>
+                        <li>CACTI memory modeling</li>
+                        <li>Performance–area–energy tradeoffs</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Memory Systems</span>
+                        <span class="tech-tag">Performance Analysis</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Verilog-based CNN Accelerator</h3>
+                        <span class="project-date">Ongoing</span>
+                    </div>
+                    <p class="project-description">
+                        Developing a parameterized RTL CNN accelerator in SystemVerilog featuring a pipelined MAC array, 
+                        on-chip SRAM buffers, and DRAM controller for tiled feature-map access.
+                    </p>
+                    <ul class="project-features">
+                        <li>Fixed-point arithmetic</li>
+                        <li>Leaky ReLU activation</li>
+                        <li>Line-buffer convolution</li>
+                        <li>Synopsys Design Compiler</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">SystemVerilog</span>
+                        <span class="tech-tag">RTL Design</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>Accessible Communication System</h3>
+                        <span class="project-date">Jan 2025 – Apr 2025</span>
+                    </div>
+                    <p class="project-description">
+                        Spearheaded the design and development of a dual-interface communication system, improving 
+                        accessibility for the deaf and enabling real-time interactions with hearing individuals.
+                    </p>
+                    <ul class="project-features">
+                        <li>ESP32-based wristband</li>
+                        <li>WebRTC video calling</li>
+                        <li>Sign Language-to-Text</li>
+                        <li>Custom Android app</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">ESP32</span>
+                        <span class="tech-tag">WebRTC</span>
+                        <span class="tech-tag">Android</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>IoT Fire Detection System</h3>
+                        <span class="project-date">Aug 2024 - Nov 2024</span>
+                    </div>
+                    <p class="project-description">
+                        Created a real-time, IoT-based fire detection and alert system using Raspberry Pi 3B+ and USB camera. 
+                        Leveraged custom HSV color space model for precise fire region detection.
+                    </p>
+                    <ul class="project-features">
+                        <li>HSV color space model</li>
+                        <li>Real-time alert system</li>
+                        <li>Geolocation integration</li>
+                        <li>Web-based monitoring</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">Raspberry Pi</span>
+                        <span class="tech-tag">IoT</span>
+                        <span class="tech-tag">Computer Vision</span>
+                        <span class="tech-tag">Python</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3>C++ Branch Prediction Simulator</h3>
+                        <span class="project-date">Ongoing</span>
+                    </div>
+                    <p class="project-description">
+                        Developing a branch prediction simulator in C++ to model bimodal, gshare, and hybrid predictors 
+                        with configurable parameters and dynamic prediction accuracy.
+                    </p>
+                    <ul class="project-features">
+                        <li>2-bit saturating counters</li>
+                        <li>Global branch history register</li>
+                        <li>Chooser table implementation</li>
+                        <li>SPEC CPU2006 branch traces</li>
+                    </ul>
+                    <div class="project-tech">
+                        <span class="tech-tag">C++</span>
+                        <span class="tech-tag">Microarchitecture</span>
+                        <span class="tech-tag">Branch Prediction</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>NC State University, Raleigh</h3>
+                        <span class="education-date">Expected May 2027</span>
+                    </div>
+                    <h4>Master of Science | Computer Engineering</h4>
+                    <p class="education-description">
+                        Coursework: ASIC and FPGA Design with Verilog, Microprocessor Architecture, 
+                        Electronic System Level and Physical Design.
+                    </p>
+                </div>
+                <div class="education-item">
+                    <div class="education-header">
+                        <h3>Anna University – Loyola ICAM College of Engineering and Technology</h3>
+                        <span class="education-date">Aug 2021 – May 2025</span>
+                    </div>
+                    <h4>Bachelor of Engineering | Electronics and Communication Engineering</h4>
+                    <p class="education-description">
+                        Coursework: VLSI and Chip Design, Digital Systems Design, Embedded Systems and IOT Design.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Publications Section -->
+    <section class="publications">
+        <div class="container">
+            <h2 class="section-title">Publications</h2>
+            <div class="publication-item">
+                <h3>IoT-Enabled Fire Detection and Alert System Leveraging HSV Thresholding</h3>
+                <p class="publication-details">
+                    <strong>Journal:</strong> Journal of Ubiquitous Computing and Communication Technologies, 
+                    Vol. 6, Issue 4, December 2024, pp. 338-352
+                </p>
+                <a href="https://irojournals.com/iroucc/" class="publication-link" target="_blank">
+                    <i class="fas fa-external-link-alt"></i> View Publication
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p>I'm always interested in discussing new opportunities, collaborations, or just having a chat about technology!</p>
+                    <div class="contact-methods">
+                        <a href="mailto:bevanjebanesan1@gmail.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>bevanjebanesan1@gmail.com</span>
+                        </a>
+                        <a href="tel:+19194389379" class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>(919) 438-9379</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/bevanjebanesan" class="contact-method" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Raleigh, NC</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Bevan Jebanesan. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
