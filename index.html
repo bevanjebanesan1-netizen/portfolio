@@ -116,6 +116,34 @@
                     <div class="card-top">
                         <div class="card-tags">
                             <span class="tag">SystemVerilog</span>
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Design Verification</span>
+                        </div>
+                        <span class="card-date">Apr 2026</span>
+                    </div>
+                    <h3 class="card-title">OpenTitan I²C DV: Upstream Contribution</h3>
+                    <p class="card-desc">
+                        An upstream pull request to lowRISC/OpenTitan, the open-source silicon
+                        root of trust backed by Google and lowRISC. Enables end-to-end ACQFIFO
+                        data verification in the I²C DV scoreboard's DUT-target write path,
+                        closing a real gap in byte-level checking of received transfers.
+                    </p>
+                    <ul class="card-features">
+                        <li>Converted a scoreboard helper from function to task to await ACQFIFO drain</li>
+                        <li>Activated 11-bit ACQDATA decode with SIGNAL-field assertions</li>
+                        <li>Replaced $dist_normal() with std::randomize() to drop a lint waiver</li>
+                        <li>Passes all 14 project CI checks (Private CI + AscentLint)</li>
+                    </ul>
+                    <a href="https://github.com/lowRISC/opentitan/pull/29819"
+                       class="card-link" target="_blank" rel="noopener">
+                        <i class="fab fa-github"></i> View Pull Request #29819
+                    </a>
+                </article>
+
+                <article class="project-card reveal">
+                    <div class="card-top">
+                        <div class="card-tags">
+                            <span class="tag">SystemVerilog</span>
                             <span class="tag">Functional Verification</span>
                             <span class="tag">Coverage</span>
                         </div>
